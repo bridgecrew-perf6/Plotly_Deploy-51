@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bellybutton Biodiversity</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+    <!-- Title Header -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 jumbotron text-center">
+                <h1>Bellybutton Biodiversity Dashboard</h1>
+                <p>Select a Test Subject ID to explore bellybutton biodiversity</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Container -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-5">
+                <!-- Dropdown Selection Menu -->
+                <div id="dropdown-menu" class="text-center">
+                    <h3>Test Subject</h3>
+                    <select id="selID">
+                        <option>Select an ID:</option>
+                    </select>
+                </div>
+                <!-- Demographic Card -->
+                <div class="card" style="width: 15rem;">
+                    <div class="card-header text-center">
+                        <h3>Demographic Information</h3>
+                    </div>
+                    <!-- List of Demographic Information -->
+                    <ul class="list-group list-group-flush" id="list-group"></ul>
+                </div>
+            </div>
+            
+            <!-- Explanation/Notes Box -->
+            <div class="col-md-9 col-sm-7">
+                <div id="explanation">
+                    <p style='font-weight: bold;'>What's an OTU?</p> <p>Operational Taxonomic Units (i.e., microbial species found in bellybuttons)</p>
+                </div>
+                    <!-- Bar Plot -->
+                    <div id="bar-plot"></div>
+            </div>
+            
+        </div>
+            
+        </div>
+    </div>
+    
+    <!-- Bottom Container -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <!-- Bubble Plot -->
+                <div id="bubble-plot"></div>
+            </div>
+            <div class="col-md-4">
+                <!-- Indicator Plot -->
+                <div id="indicator-plot"></div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Import dependencies javascript -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="samples.json"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>

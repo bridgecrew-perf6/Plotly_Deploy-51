@@ -1,0 +1,209 @@
+/* Navbar Addition */
+#logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    margin-left: 1px;
+    padding: 0px;
+    border: #90A187ff solid;
+    border-width: 8px;
+}
+
+/* Navbar */
+.navbar {
+    padding: 0px;
+    background: whitesmoke;
+    width: 100%;
+
+}
+
+/* Navbar: specifically the website title */
+.navbar-light .navbar-brand {
+    /* font-size: 25px; */
+    /* font-weight: bold; */
+    color: whitesmoke;
+    /* background: #90A187ff; */
+    padding: 20px;
+    margin-left: 20px;
+    color: whitesmoke;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+/* Navbar: list objects */
+.navbar li {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Navbar: list objects (link text) */
+.navbar li a {
+    text-decoration: none;
+    color: #34553Aff;
+    font-size: 18px;
+    text-align: right;
+
+}
+
+@media (max-width: 768px) {
+    #logo {
+        width: 80px;
+    }
+}
+
+/* Body */
+body {
+    font-family: 'Cambria', Georgia, serif;
+    /* background-color: rgb(245, 245, 245); */
+    background-color: rgb(235, 235, 235);
+}
+
+/* Dropdown Menu */
+#dropdown-menu {
+    background-color: rgb(155, 190, 199);
+    padding: 25px;
+    width: 15rem;
+    align-items: center;
+    margin-bottom: 25px;
+
+}
+
+/* Dropdown Menu: h3 */
+#dropdown-menu h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Card Header */
+.card-header {
+    /* background-color: rgb(84, 122, 165); */
+    background-color: rgb(239, 203, 104);
+    padding: 8px;
+
+}
+
+/* Demographic Card */
+.card {
+    border-style: solid;
+    border-color: black;
+    border-radius: 1px;
+    
+}
+
+/* List Group: Demographic Card */
+.list-group {
+    margin-bottom: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Card Header: h3 */
+.card-header h3 {
+    font-size: 20px;
+    /* color: white; */
+    color: black;
+    font-weight: bold;
+}
+
+/* Jumbotron: title header box */
+.jumbotron {
+    margin-top: 40px;
+    background-color: rgb(0, 42, 50);
+    color: rgb(239, 203, 104);
+    
+}
+
+.jumbotron h1 {
+    font-size: 60px;
+}
+
+/* Jumbotron sub-text */
+.jumbotron p {
+    color: white;
+    font-size: 20px;
+}
+
+/* Notes/Explanation box */
+#explanation {
+    background-color:  rgb(155, 190, 199);
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    /* margin-bottom: 10px; */
+}
+
+/* Bar Plot */
+#bar-plot {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* Bubble Plot */
+#bubble-plot {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* Gauge Plot */
+#indicator-plot {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* Media Query for smaller page */
+@media (max-width: 1200px) {
+    /* Minimize Bar Plot */
+    #bar-plot {
+        width: 95%;
+        margin-left: 30px;
+    }
+    /* Minimize explanation box */
+    #explanation {
+        margin-left: 30px;
+    }
+}
+
+/* Media Query for Smaller Page */
+@media (max-width: 991px) {
+    /* Expand bar plot */
+    #bar-plot {
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    /* Expand explanation box */
+    #explanation {
+        margin-left: 10px;
+        width: 100%
+    }
+    /* Remove margin space on jumbotron */
+    .jumbotron {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    /* Minimize dropdown menu box */
+    #dropdown-menu {
+        width: 88%;
+    }
+
+}
+
+/* Media Query for smaller page */
+@media (max-width: 767px) {
+    /* Remove margin on card */
+    .card {
+        margin-bottom: 10px;
+    }
+    /* expand dropdown menu */
+    #dropdown-menu {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
